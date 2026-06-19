@@ -23,14 +23,16 @@ MNB Heaven is a single-page coffee shop website featuring:
 
 ```
 mnb-heaven/
-├── index.html        # Main HTML page
-├── style.css         # All styling (theme variables, layout, responsiveness)
-├── script.js         # Smooth scroll + dynamic product rendering
-├── 1.jpg              # Hero image
-├── 2.jpg              # Ethiopian Yirgacheffe product image
-├── 3.jpg              # Colombian Supremo product image
-├── 4.jpg              # Dark Roast Espresso product image
-└── README.md         # Project documentation
+├── index.html             # Main HTML page
+├── style.css              # All styling (theme variables, layout, responsiveness)
+├── script.js              # Smooth scroll + dynamic product rendering
+├── 1.jpg                   # Hero image
+├── 2.jpg                   # Ethiopian Yirgacheffe product image
+├── 3.jpg                   # Colombian Supremo product image
+├── 4.jpg                   # Dark Roast Espresso product image
+├── start-live-demo.bat    # One-click live server launcher (Windows)
+├── start-live-demo.sh     # One-click live server launcher (macOS/Linux)
+└── README.md              # Project documentation
 ```
 
 > **Note:** Make sure the image files (`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`) are placed in the same folder as `index.html`, since they're referenced with relative paths.
@@ -53,25 +55,38 @@ mnb-heaven/
 
 You just need a modern web browser. No build tools or package installation required — this is a static site.
 
-### Run with Live Server (VS Code)
+### 🟢 One-Click Live Demo (no setup needed)
 
-1. **Clone or download** this project to your computer.
-2. **Open the project folder** in [Visual Studio Code](https://code.visualstudio.com/).
-3. **Install the Live Server extension** (by Ritwick Dey) from the VS Code Extensions Marketplace, if you don't already have it.
-4. In the file explorer, **right-click `index.html`** and select **"Open with Live Server"**.
-   - Or click the **"Go Live"** button in the bottom-right status bar.
-5. Your default browser will open automatically at something like:
+The fastest way — **double-click the included launcher file** for your operating system and the site opens live in your browser automatically:
+
+| OS | File to double-click |
+|---|---|
+| 🪟 Windows | `start-live-demo.bat` |
+| 🍎 macOS / 🐧 Linux | `start-live-demo.sh` |
+
+What happens when you double-click it:
+1. It automatically installs a tiny local server (`live-server`) the first time you run it (needs [Node.js](https://nodejs.org/) installed — one-time setup).
+2. It starts the server and **opens your default browser straight to the live site**.
+3. The page **auto-refreshes** instantly whenever you edit `index.html`, `style.css`, or `script.js` — true live demo experience.
+4. To stop the server, just close the terminal window.
+
+> macOS/Linux only: if double-clicking doesn't run it, right-click → "Open with Terminal", or run `chmod +x start-live-demo.sh` once to make it executable.
+
+### Run with Live Server (VS Code) — one click inside the editor
+
+1. **Open the project folder** in [Visual Studio Code](https://code.visualstudio.com/).
+2. **Install the Live Server extension** (by Ritwick Dey) from the Extensions Marketplace, if you don't already have it.
+3. Click the **"Go Live"** button in the bottom-right status bar (or right-click `index.html` → **"Open with Live Server"**).
+4. Your browser opens automatically at:
    ```
    http://127.0.0.1:5500/index.html
    ```
-6. Live Server will auto-reload the page whenever you save changes to `index.html`, `style.css`, or `script.js`.
+5. The page auto-reloads on every save.
 
-### Run without Live Server (alternative)
+### Run without any of the above (manual fallback)
 
-If you don't use VS Code, you can still preview the site by:
-
-- Simply **double-clicking `index.html`** to open it directly in your browser, **or**
-- Running a quick local server from the project folder:
+- Simply **double-click `index.html`** to open it directly in your browser, **or**
+- Run a quick local server from the project folder:
   ```bash
   # Using Python 3
   python -m http.server 5500
