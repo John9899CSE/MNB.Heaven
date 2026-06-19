@@ -17,10 +17,10 @@ MNB Heaven is a single-page coffee shop website featuring:
 - Smooth-scroll navigation for anchor links
 - Fully responsive design for mobile and tablet screens
 
----
-
-LIVE SERVER DEMO
+- LIVE SERVER DEMO
 https://john9899cse.github.io/MNB.Heaven/
+
+---
 
 ## 🗂️ Project Structure
 
