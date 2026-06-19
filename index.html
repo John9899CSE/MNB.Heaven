@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-mug-hot logo-icon"></i>
+                <div class="logo-text">MNB<span> Heaven</span></div>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-secondary">Sign In</a>
+                <a href="#" class="btn btn-primary">Order Online</a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-subtitle">
+                    <i class="fa-solid fa-seedling"></i> Natural Sourced Beans
+                </div>
+                <h1 class="hero-title">Just Coffee, <br><span> for YOU</span></h1>
+                <p class="hero-text">
+                    Discover single-origin coffees roasted to perfection in small batches for exceptional flavour.
+                    Experience the journey from bean to cup with our master roasters.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Our Blends</a>
+                    <a href="#" class="btn btn-secondary">Visit Our Cafe</a>
+                </div>
+            </div>
+            <img src="1.jpg" alt="" width="370px">
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Our Selection</div>
+                <h2 class="section-title">Signature Coffee Blends</h2>
+                <p class="section-desc">Each batch is carefully roasted to highlight the unique characteristics of the beans.</p>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="2.jpg" alt="Ethiopian Yirgacheffe">
+                        <div class="product-tag">BESTSELLER</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ethiopian Yirgacheffe</h3>
+                        <p class="product-desc">Floral notes with bright citrus acfiidity and a tea-like body. Light roast.</p>
+                        <div class="product-footer">
+                            <div class="product-price">$18.99</div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="3.jpg" alt="Colombian Supremo">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Colombian Supremo</h3>
+                        <p class="product-desc">Rich caramel sweetness with nutty undertones and balanced acidity. Medium roast.</p>
+                        <div class="product-footer">
+                            <div class="product-price">$16.99</div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa   -star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="4.jpg" alt="Dark Roast Espresso">
+                        <div class="product-tag">NEW</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Dark Roast Espresso</h3>
+                        <p class="product-desc">Bold notes and a creamy mouthfeel. Dark roast.</p>
+                        <div class="product-footer">
+                            <div class="product-price">$17.99</div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--coffee-dark); padding: 80px 0 30px;">
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-columns">
+                    <h3 style="color: var(--coffee-gold);">About MNBHeaven</h3>
+                    <p style="color: var(--coffee-accent); margin-bottom: 20px;">Just Coffee for You dedicated to quality, sustainability, and the perfect cup.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-columns">
+                    <h3 style="color: var(--coffee-gold);">Quick Links</h3>
+                    <ul class="footer-links" style="list-style: none;">
+                        <li><a href="#">Coffee Blends</a></li>
+                        <li><a href="#">Brewing Guides</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-columns">
+                    <h3 style="color: var(--coffee-gold);">Contact Us</h3>
+                    <ul class="footer-links" style="list-style: none;">
+                        <li><i class="fa-solid fa-location-dot" style="color: var(--coffee-gold);"></i> 123 Coffee Lane, Mumbai </li>
+                        <li><i class="fa-solid fa-phone" style="color: var(--coffee-gold);"></i> 9100366118 </li>
+                        <li><i class="fa-solid fa-envelope" style="color: var(--coffee-gold);"></i> hello@MNBheaven.com</li>
+                        <li><i class="fa-solid fa-clock" style="color: var(--coffee-gold);"></i> Mon-Sat: 7am - 8pm</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="copyright">
+                ©  2026 MNB Heaven Coffee Roasters. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
